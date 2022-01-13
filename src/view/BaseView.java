@@ -4,10 +4,7 @@
  */
 package view;
 
-import repository.AdminRepository;
-import repository.MemberRepository;
-import repository.MemberVehicleRepository;
-import repository.VehicleTypeRepository;
+import repository.UserRepository;
 
 import javax.swing.*;
 import java.awt.*;
@@ -48,10 +45,7 @@ public abstract class BaseView extends JPanel {
     public static final Dimension COMBO_BOX_SIZE = new Dimension(178, 27);
 
     // repository
-    protected final AdminRepository adminRepository = new AdminRepository();
-    protected final VehicleTypeRepository vehicleTypeRepository = new VehicleTypeRepository();
-    protected final MemberRepository memberRepository = new MemberRepository();
-    protected final MemberVehicleRepository memberVehicleRepository = new MemberVehicleRepository();
+    protected final UserRepository userRepository = new UserRepository();
 
     /**
      * Constructor
